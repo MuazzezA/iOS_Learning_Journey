@@ -1,6 +1,1 @@
-[submodule "TicTacToe"]
-	path = TicTacToe
-	url = ./TicTacToe
-[submodule "Storage_iOS"]
-	path = Storage_iOS
-	url = ./Storage_iOS
+
