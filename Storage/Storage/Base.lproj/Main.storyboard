@@ -56,6 +56,7 @@
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="local data" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C4P-KB-FL3">
                                 <rect key="frame" x="30" y="439" width="333" height="34"/>
+                                <color key="backgroundColor" red="0.98722581659999997" green="1" blue="0.95652248740000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="6hx-Ri-Xzk"/>
                                 </constraints>
@@ -64,6 +65,14 @@
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SVc-f5-CLQ">
                                 <rect key="frame" x="60" y="533" width="273" height="20.333333333333371"/>
+                                <color key="backgroundColor" red="0.82618109610000001" green="0.86399027179999999" blue="0.98743556700000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8el-un-16D" userLabel="err">
+                                <rect key="frame" x="20" y="613.33333333333337" width="353" height="0.0"/>
+                                <color key="backgroundColor" red="0.84733316989999996" green="0.86306876789999998" blue="0.87181862109999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -78,15 +87,19 @@
                             <constraint firstItem="MsU-gn-su2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Fao-s7-FqN"/>
                             <constraint firstItem="K4h-RG-yWa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="SGR-t6-avH"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MsU-gn-su2" secondAttribute="trailing" id="TN5-te-tok"/>
+                            <constraint firstItem="8el-un-16D" firstAttribute="top" secondItem="SVc-f5-CLQ" secondAttribute="bottom" constant="60" id="Uka-8R-sqc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="C4P-KB-FL3" secondAttribute="trailing" constant="30" id="Y3N-RF-ym3"/>
                             <constraint firstItem="SVc-f5-CLQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="YH4-Zd-9sD"/>
+                            <constraint firstItem="8el-un-16D" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="YW3-wm-N63"/>
                             <constraint firstItem="C4P-KB-FL3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="ZyW-Af-0W8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8el-un-16D" secondAttribute="trailing" constant="20" id="chQ-rD-4py"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="K4h-RG-yWa" secondAttribute="trailing" constant="30" id="gkQ-lH-Y23"/>
                             <constraint firstItem="SVc-f5-CLQ" firstAttribute="top" secondItem="C4P-KB-FL3" secondAttribute="bottom" constant="60" id="xqr-0r-5Xf"/>
                             <constraint firstItem="MsU-gn-su2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="yCB-sb-qg1"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="errorLabel" destination="8el-un-16D" id="CDO-r3-zfY"/>
                         <outlet property="image" destination="K4h-RG-yWa" id="BaH-NV-YQ2"/>
                         <outlet property="label" destination="SVc-f5-CLQ" id="hea-ds-Tjq"/>
                         <outlet property="textfield" destination="C4P-KB-FL3" id="LIW-3r-pIC"/>
